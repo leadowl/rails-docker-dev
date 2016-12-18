@@ -1,4 +1,5 @@
 FROM ruby:latest
+MAINTAINER leadowl@leadowl.eu
 
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs && \
     useradd -r -u 1000 -m -c "nexus role account" -d /opt/ror-app -s /bin/false ror
